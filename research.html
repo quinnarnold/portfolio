@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research &amp; Projects — Quinn Arnold</title>
+  <meta name="description" content="Quinn Arnold — research publications and projects in algorithms, architectures, and applied deep learning.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="nav" id="nav"></header>
+
+  <main id="main">
+
+    <div class="page-header">
+      <div class="container">
+        <p class="section-label">Publications &amp; Projects</p>
+        <h1>Research &amp; Projects</h1>
+        <p class="subtitle">Spatial prediction, decision-focused learning, and applied deep learning across research and production.</p>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="research-section">
+        <div class="research-section-head">
+          <p class="section-label">Research</p>
+        </div>
+        <div class="research-list">
+
+          <div class="research-entry featured">
+            <p class="section-label">Publication</p>
+            <h3>SafeWalk &mdash; Pedestrian Safety Routing Platform</h3>
+            <p class="pub-meta">Submitted to Journal of Transport Geography (Elsevier) &middot; 2026</p>
+            <p>Full-stack safety navigation platform combining spatial statistics research with a production cloud backend and iOS application. Built the routing engine, data pipeline, risk-scoring models, and mobile client. Research paper demonstrates KDE achieves 54.5% greater crime avoidance than XGBoost and 53.3% greater than GNN for pedestrian routing on 1.15M street segments in Chicago.</p>
+            <div class="research-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Swift</span>
+              <span class="tech-tag">Oracle OCI</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">KDE</span>
+              <span class="tech-tag">Dijkstra</span>
+              <span class="tech-tag">XGBoost</span>
+              <span class="tech-tag">GNN</span>
+            </div>
+            <a href="safewalk-paper.html" class="pub-link">Read paper &rarr;</a>
+          </div>
+
+          <div class="research-entry">
+            <p class="section-label">In Progress &middot; Summer 2026</p>
+            <h3>Adaptive Patrol Route Optimization</h3>
+            <p class="pub-meta">Targeting journal submission and department pilot</p>
+            <p>Dynamic patrol routing system that generates shift-aware routes optimized for crime deterrence using continuously updated spatial risk surfaces. Evaluates multiple routing strategies against real holdout crime data across a major U.S. city, with a fleet coordination layer handling multi-officer dispatch and mid-patrol reallocation. Currently preparing for controlled pilot deployment with a police department.</p>
+            <div class="research-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Spatial Statistics</span>
+              <span class="tech-tag">Graph Routing</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">React</span>
+            </div>
+          </div>
+
+          <div class="research-entry">
+            <p class="section-label">In Progress &middot; NeurIPS 2026 Workshop</p>
+            <h3>Decision-Focused Spatial Prediction Architecture</h3>
+            <p class="pub-meta">Novel architecture for spatial optimization under prediction-decision misalignment</p>
+            <p>Novel architecture that bridges the gap between prediction accuracy and downstream decision quality for spatial optimization tasks. Explores decision-focused learning where the model optimizes directly for routing outcomes rather than crime count prediction, addressing the predict-then-optimize misalignment identified in the SafeWalk paper.</p>
+            <div class="research-tech">
+              <span class="tech-tag">PyTorch</span>
+              <span class="tech-tag">PyTorch Geometric</span>
+              <span class="tech-tag">GATv2</span>
+              <span class="tech-tag">Decision-Focused Learning</span>
+              <span class="tech-tag">KDE</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="research-section">
+        <div class="research-section-head">
+          <p class="section-label">Projects</p>
+        </div>
+        <div class="research-list">
+
+          <div class="research-entry">
+            <p class="section-label">Industry &middot; Rhode Island Novelty</p>
+            <h3>Sales Forecasting System</h3>
+            <p class="pub-meta">2025</p>
+            <p>Built a high-accuracy sales prediction system in Python supporting real-time scenario testing for marketing and inventory decisions. Evaluated multiple model architectures and implemented automated feature engineering from historical transaction data. Achieved up to 90% accuracy with time-series forecasting and scenario simulation for inventory and revenue planning.</p>
+            <div class="research-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Time Series</span>
+            </div>
+          </div>
+
+          <div class="research-entry">
+            <p class="section-label">Industry &middot; Rhode Island Novelty</p>
+            <h3>Image Classification Pipeline</h3>
+            <p class="pub-meta">2025</p>
+            <p>End-to-end image classification system achieving 96&ndash;99% accuracy across parent and subcategories in hierarchical product taxonomies. Automated metadata generation from product images with validation tools to detect labeling inconsistencies.</p>
+            <div class="research-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Deep Learning</span>
+              <span class="tech-tag">CNN</span>
+              <span class="tech-tag">Transfer Learning</span>
+            </div>
+          </div>
+
+          <div class="research-entry">
+            <p class="section-label">Industry &middot; Rhode Island Novelty</p>
+            <h3>Semantic Search &amp; Insight Engine</h3>
+            <p class="pub-meta">2025</p>
+            <p>Interprets natural-language business questions, generates analysis code through OpenAI/Gemini APIs, and executes SQL workloads. Bridges the gap between business users and data warehouses for customer and product intelligence.</p>
+            <div class="research-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">OpenAI API</span>
+              <span class="tech-tag">Gemini API</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">NLP</span>
+            </div>
+          </div>
+
+          <div class="research-entry">
+            <p class="section-label">Industry &middot; Rhode Island Novelty</p>
+            <h3>Vector Embedding Dashboard</h3>
+            <p class="pub-meta">2025</p>
+            <p>Interactive Dash analytics interface using vector embeddings, UMAP projections, and similarity scoring. Powers product recommendations, substitution logic, and exploratory marketing analysis through customer segmentation by vectorized purchase histories.</p>
+            <div class="research-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Dash</span>
+              <span class="tech-tag">UMAP</span>
+              <span class="tech-tag">Embeddings</span>
+              <span class="tech-tag">Clustering</span>
+            </div>
+          </div>
+
+          <div class="research-entry">
+            <p class="section-label">Personal</p>
+            <h3>Neural Networks from Scratch</h3>
+            <p class="pub-meta">2025</p>
+            <p>Implemented a scalar-level automatic differentiation engine with topological-sort backpropagation, built multi-layer perceptrons from first principles, and developed character-level language models trained on 32K names with learned embeddings and cross-entropy optimization.</p>
+            <div class="research-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Autograd</span>
+              <span class="tech-tag">Backpropagation</span>
+              <span class="tech-tag">Language Models</span>
+            </div>
+          </div>
+
+          <div class="research-entry">
+            <p class="section-label">Personal</p>
+            <h3>Interactive ML Visualizations</h3>
+            <p class="pub-meta">2025</p>
+            <p>Browser-based tools for understanding machine learning internals: a neural network playground with real-time decision boundary visualization, a 3D gradient descent visualizer comparing SGD, Momentum, and Adam optimizers, and a convolutional filter explorer demonstrating kernel operations with live input/output rendering.</p>
+            <div class="research-tech">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Three.js</span>
+              <span class="tech-tag">Canvas</span>
+              <span class="tech-tag">Visualization</span>
+            </div>
+            <a href="demos.html" class="pub-link">Try demos &rarr;</a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer" id="footer"></footer>
+
+  <script src="js/components.js"></script>
+  <script src="js/nav-toggle.js"></script>
+  <script src="js/theme-toggle.js"></script>
+</body>
+</html>

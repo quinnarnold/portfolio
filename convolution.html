@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convolutional Filter Explorer — Quinn Arnold</title>
+  <meta name="description" content="Interactive convolutional filter explorer — apply classic CNN kernels to images and see feature extraction at the pixel level.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="nav" id="nav"></header>
+
+  <main id="main">
+  <div class="page-header">
+    <div class="container">
+      <a href="demos.html" class="pg-back-link">Back to Demos</a>
+      <p class="section-label">Interactive Demo</p>
+      <h1>Convolutional Filter Explorer</h1>
+      <p class="section-subtitle">Apply classic computer vision kernels to images and see how CNNs extract features at the pixel level.</p>
+    </div>
+  </div>
+
+  <section class="playground-section">
+    <div class="container">
+
+      <div class="pg-controls">
+        <div class="pg-control-group">
+          <label class="pg-label">Image Source</label>
+          <div class="pg-dataset-btns">
+            <button class="pg-dataset-btn active" data-source="shapes">Shapes</button>
+            <button class="pg-dataset-btn" data-source="gradient">Gradient</button>
+            <button class="pg-dataset-btn" data-source="text">Text</button>
+            <button class="pg-dataset-btn" data-source="upload" id="upload-btn">Upload</button>
+          </div>
+          <input type="file" id="file-input" accept="image/*" style="display:none">
+        </div>
+
+        <div class="pg-control-group">
+          <label class="pg-label" for="kernel-select">Kernel</label>
+          <select id="kernel-select" class="pg-select">
+            <option value="identity">Identity</option>
+            <option value="sobelX">Sobel X</option>
+            <option value="sobelY">Sobel Y</option>
+            <option value="laplacian">Laplacian</option>
+            <option value="gaussian">Gaussian Blur</option>
+            <option value="sharpen">Sharpen</option>
+            <option value="emboss">Emboss</option>
+            <option value="boxBlur">Box Blur</option>
+            <option value="custom">Custom</option>
+          </select>
+        </div>
+
+        <div class="pg-control-group">
+          <label class="pg-label">Actions</label>
+          <div class="pg-playback">
+            <button class="btn btn-primary btn-sm" id="btn-apply">Apply</button>
+            <button class="btn btn-outline btn-sm" id="btn-reset">Reset</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pg-canvases">
+        <div class="pg-canvas-wrap">
+          <div class="pg-canvas-label mono">Original Image</div>
+          <div class="pg-canvas-container">
+            <canvas id="source-canvas"></canvas>
+          </div>
+        </div>
+        <div class="pg-canvas-wrap">
+          <div class="pg-canvas-label mono">Filtered Output</div>
+          <div class="pg-canvas-container">
+            <canvas id="output-canvas"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="kernel-display">
+        <div class="kernel-display-label">Current Kernel</div>
+        <div class="kernel-grid" id="kernel-grid"></div>
+      </div>
+
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="footer" id="footer"></footer>
+
+  <script src="js/components.js"></script>
+  <script src="js/nav-toggle.js"></script>
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/convolution.js"></script>
+</body>
+</html>

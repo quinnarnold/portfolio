@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV — Quinn Arnold</title>
+  <meta name="description" content="Quinn Arnold — CV — deep learning, algorithm design, and applied research across industry and academia.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="nav" id="nav"></header>
+
+  <main id="main">
+
+    <div class="page-header">
+      <div class="container">
+        <p class="section-label">Background</p>
+        <h1>CV</h1>
+        <p class="subtitle">Deep learning, algorithm design, and applied research across industry and academia.</p>
+        <a href="assets/cv.pdf" download class="btn btn-outline btn-sm" style="margin-top: 1rem; display: inline-flex;">Download PDF &darr;</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="cv-section">
+        <p class="section-label">Experience</p>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">Summer 2026 (Incoming)</span>
+            <div class="timeline-entry">
+              <h3>MAPFRE Insurance</h3>
+              <p class="timeline-role">Advanced Analytics Intern</p>
+              <p class="timeline-location">Webster, MA</p>
+              <ul>
+                <li>Developing predictive models and ML applications for insurance risk assessment on the Advanced Analytics team.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot current"></div>
+            <span class="timeline-date">September 2025 &mdash; Present</span>
+            <div class="timeline-entry">
+              <h3>SafeWalk</h3>
+              <p class="timeline-role">Researcher &amp; Developer</p>
+              <p class="timeline-location">Smithfield, RI</p>
+              <ul>
+                <li>Designed a corridor-based ground-truth evaluation framework comparing five crime risk prediction methods (historical average, KDE, temporal-KDE, XGBoost, GNN) for pedestrian safety routing in three U.S. cities.</li>
+                <li>Built an end-to-end spatiotemporal pipeline: OSM graph extraction with edge splitting, KDTree-based crime-to-edge assignment, rolling time-window features, and risk surface generation using XGBoost Tweedie regression and Gaussian KDE.</li>
+                <li>Developed risk-weighted Dijkstra routing over igraph with precomputed weight vectors and Pareto frontier analysis for optimizing the detour-benefit trade-off across time bins.</li>
+                <li>Deployed as a production system: hybrid TypeScript/Python backend on Oracle OCI with Redis caching, Mapbox map-matching, and a native SwiftUI iOS application serving three cities.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">June 2025 &mdash; August 2025</span>
+            <div class="timeline-entry">
+              <h3>Rhode Island Novelty</h3>
+              <p class="timeline-role">Machine Learning Intern</p>
+              <p class="timeline-location">Fall River, MA</p>
+              <ul>
+                <li>Developed time-series forecasting models with up to 90% accuracy using automated feature engineering and scenario simulation for inventory and revenue planning.</li>
+                <li>Built an image classification pipeline achieving 96&ndash;99% accuracy across hierarchical product taxonomies with automated metadata extraction and label inconsistency detection.</li>
+                <li>Engineered a semantic search system using vector embeddings (OpenAI, Gemini APIs) to translate natural language business queries into executable SQL over product and customer data.</li>
+                <li>Designed a customer segmentation framework using purchase history vectorization, UMAP dimensionality reduction, and behavioral clustering.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="cv-section">
+        <p class="section-label">Education</p>
+        <div class="education-section">
+          <h3>Bryant University</h3>
+          <p>Bachelor of Science &mdash; Applied Mathematics and Statistics</p>
+          <p>Minor in Business Administration</p>
+          <p>September 2023 &mdash; December 2026</p>
+          <p>GPA: 3.95 &mdash; President&rsquo;s List</p>
+          <p class="education-coursework"><strong>Relevant Coursework:</strong> Probability, Mathematical Statistics, Linear Algebra, Multivariable Calculus, Differential Equations, Real Analysis, Numerical Methods, Actuarial Probability Theory</p>
+        </div>
+      </div>
+
+      <div class="cv-section">
+        <p class="section-label">Skills</p>
+        <div class="skills-grid">
+          <div class="skills-group">
+            <p class="skills-label">Languages</p>
+            <p class="skills-items">Python, SQL, Swift, TypeScript, JavaScript, R</p>
+          </div>
+          <div class="skills-group">
+            <p class="skills-label">ML &amp; Deep Learning</p>
+            <p class="skills-items">PyTorch, scikit-learn, XGBoost, automatic differentiation, backpropagation, gradient descent (SGD, Adam)</p>
+          </div>
+          <div class="skills-group">
+            <p class="skills-label">Algorithms &amp; Mathematics</p>
+            <p class="skills-items">Dijkstra, KDTree, graph algorithms (igraph, NetworkX), KDE, UMAP, Pareto optimization, statistical learning</p>
+          </div>
+          <div class="skills-group">
+            <p class="skills-label">Scientific Computing</p>
+            <p class="skills-items">NumPy, SciPy, pandas, GeoPandas, Shapely, OSMnx, H3, Matplotlib</p>
+          </div>
+          <div class="skills-group">
+            <p class="skills-label">Tools</p>
+            <p class="skills-items">Git, Docker, LaTeX, Oracle OCI</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cv-section">
+        <p class="section-label">Contact</p>
+        <div class="cv-contact">
+          <ul class="cv-contact-links">
+            <li><a href="mailto:qarnold@bryant.edu">qarnold@bryant.edu</a></li>
+            <li><a href="https://www.linkedin.com/in/quinnkarnold" target="_blank" rel="noopener noreferrer">LinkedIn &nearr;</a></li>
+            <li><a href="https://github.com/quinnarnold" target="_blank" rel="noopener noreferrer">GitHub &nearr;</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer" id="footer"></footer>
+
+  <script src="js/components.js"></script>
+  <script src="js/nav-toggle.js"></script>
+  <script src="js/theme-toggle.js"></script>
+</body>
+</html>

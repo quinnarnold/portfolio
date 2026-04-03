@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Demos — Quinn Arnold</title>
+  <meta name="description" content="Interactive machine learning demos — neural network playground, convolutional filter explorer, and gradient descent visualizer.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="nav" id="nav"></header>
+
+  <main id="main">
+
+    <div class="page-header">
+      <div class="container">
+        <p class="section-label">Interactive</p>
+        <h1>ML Demos</h1>
+        <p class="subtitle">Explore machine learning concepts through interactive visualizations built with vanilla JavaScript and Canvas.</p>
+      </div>
+    </div>
+
+    <div class="demo-section">
+      <div class="container">
+        <div class="demo-list">
+
+          <div class="demo-entry">
+            <h3><a href="playground.html">Neural Network Playground</a></h3>
+            <p>Build a small neural network, pick a dataset, and watch the decision boundary evolve as it trains in real time. Adjust hidden layers, learning rate, and activation functions to explore how architecture shapes the learned surface.</p>
+            <div class="research-tech">
+              <span class="tech-tag">Backpropagation</span>
+              <span class="tech-tag">Decision Boundaries</span>
+              <span class="tech-tag">Canvas</span>
+            </div>
+          </div>
+
+          <div class="demo-entry">
+            <h3><a href="convolution.html">Convolutional Filter Explorer</a></h3>
+            <p>Apply classic computer vision kernels to images and see how CNNs extract features at the pixel level. Experiment with edge detection, sharpening, and blur filters to understand spatial feature extraction.</p>
+            <div class="research-tech">
+              <span class="tech-tag">Convolution</span>
+              <span class="tech-tag">Edge Detection</span>
+              <span class="tech-tag">ImageData</span>
+            </div>
+          </div>
+
+          <div class="demo-entry">
+            <h3><a href="gradient-descent.html">Gradient Descent Visualizer</a></h3>
+            <p>Compare SGD, Momentum, and Adam optimizers as they trace paths across 2D loss surfaces toward minima. Watch how each optimizer navigates saddle points, flat regions, and sharp valleys.</p>
+            <div class="research-tech">
+              <span class="tech-tag">Optimization</span>
+              <span class="tech-tag">Contour Plots</span>
+              <span class="tech-tag">Adam</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer" id="footer"></footer>
+
+  <script src="js/components.js"></script>
+  <script src="js/nav-toggle.js"></script>
+  <script src="js/theme-toggle.js"></script>
+</body>
+</html>

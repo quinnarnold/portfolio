@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient Descent Visualizer — Quinn Arnold</title>
+  <meta name="description" content="Interactive 3D gradient descent visualizer — compare SGD, Momentum, and Adam optimizers on 3D loss surfaces.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="nav" id="nav"></header>
+
+  <main id="main">
+  <div class="page-header">
+    <div class="container">
+      <a href="demos.html" class="pg-back-link">Back to Demos</a>
+      <p class="section-label">Interactive Demo</p>
+      <h1>Gradient Descent Visualizer</h1>
+      <p class="section-subtitle">Compare SGD, Momentum, and Adam optimizers as they trace paths across loss surfaces toward minima.</p>
+    </div>
+  </div>
+
+  <section class="playground-section">
+    <div class="container">
+
+      <div class="pg-controls">
+        <div class="pg-control-group">
+          <label class="pg-label" for="surface-select">Loss Surface</label>
+          <select id="surface-select" class="pg-select">
+            <option value="bowl">Bowl</option>
+            <option value="elongated">Elongated Bowl</option>
+            <option value="rosenbrock">Rosenbrock</option>
+            <option value="saddle">Saddle</option>
+            <option value="himmelblau">Himmelblau</option>
+          </select>
+        </div>
+
+        <div class="pg-control-group">
+          <label class="pg-label">Optimizers</label>
+          <div class="pg-checkbox-group">
+            <label class="pg-checkbox-label">
+              <input type="checkbox" id="opt-sgd" checked>
+              <span class="pg-checkbox-dot sgd"></span>
+              SGD
+            </label>
+            <label class="pg-checkbox-label">
+              <input type="checkbox" id="opt-momentum" checked>
+              <span class="pg-checkbox-dot momentum"></span>
+              Momentum
+            </label>
+            <label class="pg-checkbox-label">
+              <input type="checkbox" id="opt-adam" checked>
+              <span class="pg-checkbox-dot adam"></span>
+              Adam
+            </label>
+          </div>
+        </div>
+
+        <div class="pg-control-group">
+          <label class="pg-label" for="lr-slider">Learning Rate</label>
+          <input type="range" id="lr-slider" class="pg-slider" min="-4" max="-0.5" step="0.1" value="-2">
+          <span class="pg-lr-value mono" id="lr-value">0.0100</span>
+        </div>
+
+        <div class="pg-control-group">
+          <label class="pg-label">Controls</label>
+          <div class="pg-playback">
+            <button class="btn btn-primary btn-sm" id="btn-play">Play</button>
+            <button class="btn btn-outline btn-sm" id="btn-step">Step</button>
+            <button class="btn btn-outline btn-sm" id="btn-reset">Reset</button>
+          </div>
+        </div>
+
+        <div class="pg-control-group pg-stats">
+          <div class="pg-stat">
+            <span class="pg-label">Step</span>
+            <span class="pg-stat-value mono" id="stat-step">0</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gd-canvas-wrap">
+        <div class="gd-canvas-container" id="gd-container">
+        </div>
+        <p class="gd-hint">Click on the surface to place a starting point &middot; Drag to rotate</p>
+      </div>
+
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="footer" id="footer"></footer>
+
+  <script src="js/components.js"></script>
+  <script src="js/nav-toggle.js"></script>
+  <script src="js/theme-toggle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="js/gradient-descent.js"></script>
+</body>
+</html>
